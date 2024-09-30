@@ -31,7 +31,7 @@ npm init using barketplace/makegrid
 ## Example
 The parameter grid is defined in a json file, e.g. `configs/example.json`:
 ```bash
-cat configs/example.json
+$ cat configs/example.json
 {
     "set_of_options1":{
         "option_a": [1, 2, 3, 4], 
@@ -130,7 +130,7 @@ srun --gpus=1 python main.py -i configs/example/9.json -v 0 -j 1
 
 Note: Since this will request `1` specific GPU for the execution of each command, it makes sense to submit all the requests in parallel:
 ```bash
-$ make indir=example SLURM="srun --gpus=1" -j 12
+make indir=example SLURM="srun --gpus=1" -j 12
 ```
 
 
