@@ -65,19 +65,19 @@ $ cat configs/example/1.json
 2. For a dry-run of the grid, use the `-n` option :
 
 ```bash
-$ make indir=example script=main.py n_jobs=4 verbose=1 -n
-python main.py -i configs/example/10.json -v 1 -j 4
-python main.py -i configs/example/11.json -v 1 -j 4
-python main.py -i configs/example/12.json -v 1 -j 4
-python main.py -i configs/example/1.json -v 1 -j 4
-python main.py -i configs/example/2.json -v 1 -j 4
-python main.py -i configs/example/3.json -v 1 -j 4
-python main.py -i configs/example/4.json -v 1 -j 4
-python main.py -i configs/example/5.json -v 1 -j 4
-python main.py -i configs/example/6.json -v 1 -j 4
-python main.py -i configs/example/7.json -v 1 -j 4
-python main.py -i configs/example/8.json -v 1 -j 4
-python main.py -i configs/example/9.json -v 1 -j 4
+$ make indir=example script=_main.py n_jobs=4 verbose=1 -n
+python _main.py -i configs/example/10.json -v 1 -j 4
+python _main.py -i configs/example/11.json -v 1 -j 4
+python _main.py -i configs/example/12.json -v 1 -j 4
+python _main.py -i configs/example/1.json -v 1 -j 4
+python _main.py -i configs/example/2.json -v 1 -j 4
+python _main.py -i configs/example/3.json -v 1 -j 4
+python _main.py -i configs/example/4.json -v 1 -j 4
+python _main.py -i configs/example/5.json -v 1 -j 4
+python _main.py -i configs/example/6.json -v 1 -j 4
+python _main.py -i configs/example/7.json -v 1 -j 4
+python _main.py -i configs/example/8.json -v 1 -j 4
+python _main.py -i configs/example/9.json -v 1 -j 4
 ```
 This lists all the `12` commands that will be executed.
 
