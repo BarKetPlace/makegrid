@@ -81,7 +81,7 @@ python _main.py -i configs/example/9.json -v 1 -j 4
 ```
 This lists all the `12` commands that will be executed.
 
-By default, a Python interpreter and a `main.py` script taking at least arguments `-i` , `-v` and `-j` are expected.
+By default, a Python interpreter and a `_main.py` script taking at least arguments `-i` , `-v` and `-j` are expected.
 
 Note: The name of the script can be edited in the `Makefile` or passed as an argument: `script=main.py`.
 
