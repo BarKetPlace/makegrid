@@ -18,7 +18,7 @@ endif
 cfg_dir=configs
 res_dir=results
 
-usage="USAGE:\nmake indir=example\nmake script=main.py indir=example verbose=1 n_jobs=<Number of tasks per process> -j <Total number of processes> (init)"
+usage="USAGE:\nDocumention: https://github.com/BarKetPlace/makegrid/\nmake indir=example\nmake script=main.py indir=example verbose=1 n_jobs=<Number of tasks per process> -j <Total number of processes> (init)"
 
 all_configs=$(shell ls $(cfg_dir)/$(indir))
 all_targets=$(addprefix $(res_dir)/$(indir)/,$(foreach fname,$(all_configs),$(shell echo $(fname) | sed 's/.json/.pkl/g')))
